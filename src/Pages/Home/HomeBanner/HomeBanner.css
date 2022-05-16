@@ -1,0 +1,18 @@
+.banner-container{
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+}
+.banner-title{
+    color: rgb(39, 39, 100);
+}
+
+.banner-text{
+    color: rgb(92, 89, 89);
+}
+
+.banner-img{
+    width: 100%;
+}

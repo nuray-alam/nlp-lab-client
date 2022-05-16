@@ -3,6 +3,7 @@ import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { Col, Row, Spinner } from 'react-bootstrap';
 import Navigation from '../../Shared/Navigation/Navigation'
+import Home from '../../Home/Home/Home';
 const Login = () => {
 
     const [loginData, setLoginData] = useState({});
@@ -46,7 +47,7 @@ const Login = () => {
                         <br />
                         <button type="submit" className="btn btn-primary">Login</button>
                         <br />
-                        <Link style={{ width: "75%", textDecoration: "none" }} to="/register">New User? Please Register</Link>
+                        <a style={{ width: "75%", textDecoration: "none" }} href="/register">New User? Please Register</a>
                     </form>
                     <p>-------------------------------------------</p>
                     <button className="btn btn-primary mb-3 ms-3" onClick={handleGoogleSignIn}>Google Sign In</button>

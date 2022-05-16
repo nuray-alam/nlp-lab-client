@@ -4,10 +4,11 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
-import Register from './Pages/Login/Register/Register';
-import AuthProvider from './contexts/AuthProvider/AuthProvider';
+import Register from './Pages/Login/Register/Register'
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <Route path='/register'>
               <Register></Register>
+            </Route>
+            <Route path='/dashboard'>
+              <Dashboard></Dashboard>
             </Route>
           </Switch>
         </Router>
