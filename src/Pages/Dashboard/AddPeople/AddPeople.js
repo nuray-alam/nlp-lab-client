@@ -5,14 +5,14 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const AddPeople = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
-let history = useHistory();
+    let history = useHistory();
 
-      // onSubmit event handler
-      const onSubmit = data => {
+    // onSubmit event handler
+    const onSubmit = data => {
         const newPeople = data;
         console.log(newPeople);
         // positing the data to the server and db
-        fetch('http://localhost:5000/addPeople', {
+        fetch('https://radiant-inlet-26623.herokuapp.com/addPeople', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -37,7 +37,7 @@ let history = useHistory();
                 <input className="mb-3" {...register("name", { required: true })} />
                 {errors.exampleRequired && <span>This field is required</span>}
 
-                
+
 
 
                 <label className="$text-dark fw-bold fs-5">Position:</label>

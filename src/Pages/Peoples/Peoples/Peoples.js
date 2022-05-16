@@ -10,7 +10,7 @@ const Peoples = () => {
 
     //getting all people
     useEffect(() => {
-        fetch('http://localhost:5000/peoples')
+        fetch('https://radiant-inlet-26623.herokuapp.com/peoples')
             .then(res => res.json())
             .then(data => {
                 // setPeoples(data.slice(0, 6))
