@@ -8,7 +8,6 @@ const People = (props) => {
 
     const { imgUrl, name, position, fbLink, linkedInLink, twitterLink } = people;
 
-    console.log("People: ", people);
 
     return (
         <Col>
