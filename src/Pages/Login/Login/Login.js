@@ -4,6 +4,7 @@ import useAuth from '../../../hooks/useAuth';
 import { Col, Row, Spinner } from 'react-bootstrap';
 import Navigation from '../../Shared/Navigation/Navigation'
 import Home from '../../Home/Home/Home';
+import Footer from '../../Shared/Footer/Footer';
 const Login = () => {
 
     const [loginData, setLoginData] = useState({});
@@ -61,6 +62,7 @@ const Login = () => {
                 </Col>
 
             </Row>
+            <Footer></Footer>
         </div>
 
     );

@@ -16,7 +16,9 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto fs-6">
                         <a href='/home' className="text-decoration-none header-link me-3 text-white fw-bold">Home</a>
-                        {user.email && <a href="/dashboard" activeStyle={{ color: "#91BFFF" }} className="text-decoration-none header-link me-3">Dashboard</a>}
+                        <a href='/peoples' className="text-decoration-none header-link me-3 text-white fw-bold">Peoples</a>
+                        {user.email && <a href="/dashboard" className="text-decoration-none header-link me-3 text-white fw-bold">Dashboard</a>}
+                 
                     </Nav>
 
                     {/* conditional rendering user name */}
